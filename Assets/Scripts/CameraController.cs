@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour
         Vector3 dir = player.forward;
         dir.x += rotX;
         dir.y += rotY;
+        //rootｙをいじるとキャラクターのどこをとるかが変えられる
         transform.rotation = Quaternion.LookRotation(dir);
     }
 }
